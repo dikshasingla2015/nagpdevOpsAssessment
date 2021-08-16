@@ -19,5 +19,5 @@ spec:
           image: dikshasingla/nagp-inventory:latest-feature
           ports:
             - name: http
-              protocol: TCPs
+              protocol: TCP
               containerPort: 3515 
