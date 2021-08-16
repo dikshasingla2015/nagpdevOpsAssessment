@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: inventory-app
+  labels:
+    app: inventory-app
+spec:
+  type: LoadBalancer
+  selector:
+    app: inventory-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3515
